@@ -17,8 +17,6 @@ public class Producto {
         this.categoria = categoria;
     }
 
-    
-
     public String getCodigo() {
 		return codigo;
 	}
