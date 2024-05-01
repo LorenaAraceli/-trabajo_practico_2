@@ -92,4 +92,5 @@ public class Producto {
         ELECTROHOGAR,
         HERRAMIENTAS
     }
+
 }
