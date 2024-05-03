@@ -21,7 +21,10 @@ public class Producto {
         this.origenFabricacion = origenFabricacion;
         this.categoria = categoria;
     }
-
+    
+    public Producto() {
+		// TODO Auto-generated constructor stub
+	}
    
     public enum OrigenFabricacion {
         NACIONAL,
@@ -115,83 +118,97 @@ public class Producto {
                 ", estado=" + estado +
                 '}';
     }
+    
+    
+    public static void main(String[] args){
+    	
+    ArrayList<Producto> productos = new ArrayList<>();
+    
+    Producto producto1 = new Producto("COD1", "Producto 1", 10.0, OrigenFabricacion.ARGENTINA, Categoria.TELEFONIA);
+    producto1.setEstado(true);
+    productos.add(producto1);
 
+    Producto producto2 = new Producto("COD2", "Producto 2", 20.0, OrigenFabricacion.CHINA, Categoria.INFORMATICA);
+    producto2.setEstado(true);
+    productos.add(producto2);
+    
+    Producto producto3 = new Producto("COD3", "Producto 3", 15.0, OrigenFabricacion.ESPAÑA, Categoria.ROPA);
+    producto3.setEstado(true);
+    productos.add(producto3);
 
-	public static void main(String[] args) {
-        ArrayList<Producto> productos = new ArrayList<>();
+    Producto producto4 = new Producto("COD4", "Producto 4", 25.0, OrigenFabricacion.ITALIA, Categoria.CALZADO);
+    producto4.setEstado(true);
+    productos.add(producto4);
 
-        
-        Producto producto1 = new Producto("COD1", "Producto 1", 10.0, OrigenFabricacion.ARGENTINA, Categoria.TELEFONIA);
-        producto1.setEstado(true);
-        productos.add(producto1);
+    Producto producto5 = new Producto("COD5", "Producto 5", 30.0, OrigenFabricacion.FRANCIA, Categoria.JOYERIA);
+    producto5.setEstado(true);
+    productos.add(producto5);
 
-        Producto producto2 = new Producto("COD2", "Producto 2", 20.0, OrigenFabricacion.CHINA, Categoria.INFORMATICA);
-        producto2.setEstado(true);
-        productos.add(producto2);
-        
-        Producto producto3 = new Producto("COD3", "Producto 3", 15.0, OrigenFabricacion.ESPAÑA, Categoria.ROPA);
-        producto3.setEstado(true);
-        productos.add(producto3);
+    Producto producto6 = new Producto("COD6", "Producto 6", 40.0, OrigenFabricacion.ALEMANIA, Categoria.ELECTRODOMESTICOS);
+    producto6.setEstado(true);
+    productos.add(producto6);
 
-        Producto producto4 = new Producto("COD4", "Producto 4", 25.0, OrigenFabricacion.ITALIA, Categoria.CALZADO);
-        producto4.setEstado(true);
-        productos.add(producto4);
+    Producto producto7 = new Producto("COD7", "Producto 7", 50.0, OrigenFabricacion.JAPON, Categoria.TECNOLOGIA);
+    producto7.setEstado(true);
+    productos.add(producto7);
 
-        Producto producto5 = new Producto("COD5", "Producto 5", 30.0, OrigenFabricacion.FRANCIA, Categoria.JOYERIA);
-        producto5.setEstado(true);
-        productos.add(producto5);
+    Producto producto8 = new Producto("COD8", "Producto 8", 20.0, OrigenFabricacion.CHINA, Categoria.HOGAR);
+    producto8.setEstado(true);
+    productos.add(producto8);
 
-        Producto producto6 = new Producto("COD6", "Producto 6", 40.0, OrigenFabricacion.ALEMANIA, Categoria.ELECTRODOMESTICOS);
-        producto6.setEstado(true);
-        productos.add(producto6);
+    Producto producto9 = new Producto("COD9", "Producto 9", 10.0, OrigenFabricacion.ARGENTINA, Categoria.DEPORTE);
+    producto9.setEstado(true);
+    productos.add(producto9);
 
-        Producto producto7 = new Producto("COD7", "Producto 7", 50.0, OrigenFabricacion.JAPON, Categoria.TECNOLOGIA);
-        producto7.setEstado(true);
-        productos.add(producto7);
+    Producto producto10 = new Producto("COD10", "Producto 10", 35.0, OrigenFabricacion.ITALIA, Categoria.MODA);
+    producto10.setEstado(true);
+    productos.add(producto10);
 
-        Producto producto8 = new Producto("COD8", "Producto 8", 20.0, OrigenFabricacion.CHINA, Categoria.HOGAR);
-        producto8.setEstado(true);
-        productos.add(producto8);
+    Producto producto11 = new Producto("COD11", "Producto 11", 45.0, OrigenFabricacion.ESPAÑA, Categoria.COCINA);
+    producto11.setEstado(true);
+    productos.add(producto11);
 
-        Producto producto9 = new Producto("COD9", "Producto 9", 10.0, OrigenFabricacion.ARGENTINA, Categoria.DEPORTE);
-        producto9.setEstado(true);
-        productos.add(producto9);
+    Producto producto12 = new Producto("COD12", "Producto 12", 55.0, OrigenFabricacion.FRANCIA, Categoria.BELLEZA);
+    producto12.setEstado(true);
+    productos.add(producto12);
 
-        Producto producto10 = new Producto("COD10", "Producto 10", 35.0, OrigenFabricacion.ITALIA, Categoria.MODA);
-        producto10.setEstado(true);
-        productos.add(producto10);
+    Producto producto13 = new Producto("COD13", "Producto 13", 25.0, OrigenFabricacion.ALEMANIA, Categoria.LIBROS);
+    producto13.setEstado(true);
+    productos.add(producto13);
+    
+    Producto producto14 = new Producto("COD14", "Producto 14", 60.0, OrigenFabricacion.CHINA, Categoria.JUGUETES);
+    producto14.setEstado(true);
+    productos.add(producto14);
 
-        Producto producto11 = new Producto("COD11", "Producto 11", 45.0, OrigenFabricacion.ESPAÑA, Categoria.COCINA);
-        producto11.setEstado(true);
-        productos.add(producto11);
+    Producto producto15 = new Producto("COD15", "Producto 15", 70.0, OrigenFabricacion.JAPON, Categoria.ACCESORIOS);
+    producto15.setEstado(true);
+    productos.add(producto15);
 
-        Producto producto12 = new Producto("COD12", "Producto 12", 55.0, OrigenFabricacion.FRANCIA, Categoria.BELLEZA);
-        producto12.setEstado(true);
-        productos.add(producto12);
-
-        Producto producto13 = new Producto("COD13", "Producto 13", 25.0, OrigenFabricacion.ALEMANIA, Categoria.LIBROS);
-        producto13.setEstado(true);
-        productos.add(producto13);
-        
-        Producto producto14 = new Producto("COD14", "Producto 14", 60.0, OrigenFabricacion.CHINA, Categoria.JUGUETES);
-        producto14.setEstado(true);
-        productos.add(producto14);
-
-        Producto producto15 = new Producto("COD15", "Producto 15", 70.0, OrigenFabricacion.JAPON, Categoria.ACCESORIOS);
-        producto15.setEstado(true);
-        productos.add(producto15);
-
-        for (Producto producto : productos) {
-            System.out.println(producto);
-        }
-    }
-
+   /* for (Producto producto : productos) {
+        System.out.println(producto);
+    }*/
+}
 	public int getStock() {
 	    return this.getStock();
 	}
 
 	public void setStock(int stock) {
 	    this.stock = stock;
+	}
+
+	public static boolean isEmpty() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public static int size() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public static Producto get(int i) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
