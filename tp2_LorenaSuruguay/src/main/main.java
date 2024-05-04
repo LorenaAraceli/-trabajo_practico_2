@@ -4,8 +4,6 @@ import ar.edu.unju.fi.ejercicio6.model.FelinoDomestico;
 import ar.edu.unju.fi.ejercicio6.model.FelinoSalvaje;
 import interfaces.funcionales.Converter;
 
-
-
 public class main {
     public static void main(String[] args) {
         FelinoDomestico gato = new FelinoDomestico("Garfield", (byte)45, 12f);
